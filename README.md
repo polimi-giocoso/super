@@ -7,7 +7,7 @@
 
 ###### License
 
-Copyright 2015 Lorenzo Affetti, Giacomo Bresciani, Stefano Cappa
+Copyright 2015 Politecnico di Milano
 
 Unless explicitly stated otherwise all files in this repository are
 licensed under the Apache License, Version 2.0 (the "License");
