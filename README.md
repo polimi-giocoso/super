@@ -1,8 +1,11 @@
 [![Build Status](https://travis-ci.org/playfellas/superapp.svg?branch=master)](https://github.com/playfellas/superapp)
 
+# Super App
+
+- [Documentazione](https://github.com/polimi-giocoso/docs)
 
 
-## License
+###### License
 
 Copyright 2015 Lorenzo Affetti, Giacomo Bresciani, Stefano Cappa
 
