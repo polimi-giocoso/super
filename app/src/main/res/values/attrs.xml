@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ConveyorView">
+    <attr name="speed" format="integer"/>
+    <attr name="direction" format="enum">
+      <enum name="right" value="1"/>
+      <enum name="left" value="-1"/>
+    </attr>
+    <attr name="frame_num" format="integer"/>
+    <attr name="src" format="reference"/>
+  </declare-styleable>
+</resources>

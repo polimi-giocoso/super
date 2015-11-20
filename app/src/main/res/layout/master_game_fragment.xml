@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/_sfondo_grigio_xml"
+                tools:context="it.playfellas.superapp.ui.master.game1.Game1SettingsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/photosMasterLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp">
+
+        <!-- this lib hdodenhofCircleImageView has a limitation: never
+        change/declare android:scaleType="centerInside" -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo1ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/_photo_default"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo2ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/photo1ImageView"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/photo1ImageView"
+            android:src="@drawable/_photo_default"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo3ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/photo2ImageView"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/photo2ImageView"
+            android:src="@drawable/_photo_default"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo4ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/photo3ImageView"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/photo3ImageView"
+            android:src="@drawable/_photo_default"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/central_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/photosMasterLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/_master_central_img_gray"/>
+
+    <Button
+        android:id="@+id/showMasterInfos"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/masterInfosRelativeLayout"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/_bt_master_info_button"
+        android:text="\?"
+        android:textColor="@color/medium_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/masterInfosRelativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photosMasterLayout"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/showMasterInfos"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/currentStageOverTotalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="end"
+            android:text="0 / 0"
+            android:textAlignment="gravity"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/currentScoreOverTotalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/currentStageOverTotalTextView"
+            android:layout_below="@+id/currentStageOverTotalTextView"
+            android:gravity="end"
+            android:text="0 / 0"
+            android:textAlignment="gravity"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/gameIdInDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/currentScoreOverTotalTextView"
+            android:gravity="end"
+            android:text="0 / 0"
+            android:textAlignment="gravity"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <Button
+            android:id="@+id/exitGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/gameIdInDb"
+            android:background="@drawable/_bt_master_info_button"
+            android:text="Fine partita"
+            android:textColor="@color/medium_gray"
+            android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

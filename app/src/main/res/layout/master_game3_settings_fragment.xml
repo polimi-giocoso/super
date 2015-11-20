@@ -1,0 +1,179 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_sfondo_grigio_xml"
+    tools:context="it.playfellas.superapp.ui.master.game3.Game3SettingsFragment">
+
+    <TextView
+        android:id="@+id/settingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Impostazioni"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/_tasto_avanti"/>
+
+    <TextView
+        android:id="@+id/diffcultyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="255dp"
+        android:layout_toStartOf="@+id/settingsTextView"
+        android:text="Difficoltà gioco"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/densityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/diffcultyLabel"
+        android:layout_below="@+id/diffcultyLabel"
+        android:layout_marginTop="63dp"
+        android:text="Densità immagini"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/consecutiveAnswerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/densityLabel"
+        android:layout_below="@+id/densityLabel"
+        android:layout_marginTop="35dp"
+        android:text="Numero risposte per manche"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/partsNumCentralImgLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/consecutiveAnswerLabel"
+        android:layout_below="@+id/consecutiveAnswerLabel"
+        android:layout_marginTop="26dp"
+        android:text="Numero manche"
+        android:textSize="18dp"/>
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/tileDensitySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/densityLabel"
+        android:layout_marginRight="150dp"
+        android:layout_toEndOf="@+id/settingsTextView"
+        android:indeterminate="false"
+        app:dsb_indicatorColor="@color/orange"
+        app:dsb_indicatorElevation="10dp"
+        app:dsb_indicatorTextAppearance="@color/white"
+        app:dsb_max="6"
+        app:dsb_min="1"
+        app:dsb_progressColor="@color/orange"
+        app:dsb_rippleColor="@color/orange"
+        app:dsb_trackColor="@color/orange"
+        app:dsb_value="4"/>
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/scorePerStageSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/consecutiveAnswerLabel"
+        android:layout_alignStart="@+id/tileDensitySeekBar"
+        android:layout_marginRight="150dp"
+        android:indeterminate="false"
+        app:dsb_indicatorColor="@color/orange"
+        app:dsb_indicatorElevation="10dp"
+        app:dsb_indicatorTextAppearance="@color/white"
+        app:dsb_max="4"
+        app:dsb_min="1"
+        app:dsb_progressColor="@color/orange"
+        app:dsb_rippleColor="@color/orange"
+        app:dsb_trackColor="@color/orange"
+        app:dsb_value="4"/>
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/numStagesSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/partsNumCentralImgLabel"
+        android:layout_alignStart="@+id/scorePerStageSeekBar"
+        android:layout_marginRight="150dp"
+        android:indeterminate="false"
+        app:dsb_indicatorColor="@color/orange"
+        app:dsb_indicatorElevation="10dp"
+        app:dsb_indicatorTextAppearance="@color/white"
+        app:dsb_max="10"
+        app:dsb_min="1"
+        app:dsb_progressColor="@color/orange"
+        app:dsb_rippleColor="@color/orange"
+        app:dsb_trackColor="@color/orange"
+        app:dsb_value="2"/>
+
+    <Spinner
+        android:id="@+id/difficultyLevelSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/densityLabel"
+        android:layout_marginRight="150dp"
+        android:layout_toEndOf="@+id/settingsTextView"
+        android:spinnerMode="dropdown"/>
+
+
+    <TextView
+        android:id="@+id/speedIncreasingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/densityLabel"
+        android:layout_below="@+id/partsNumCentralImgLabel"
+        android:layout_marginTop="32dp"
+        android:text="Velocità di gioco crescente"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:id="@+id/speedUpCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/speedIncreasingLabel"
+        android:layout_alignStart="@+id/numStagesSeekBar"
+        android:checked="false"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/speedIncreasingLabel"
+        android:layout_below="@+id/speedIncreasingLabel"
+        android:layout_marginTop="32dp"
+        android:text="Tutorial"
+        android:textSize="18dp"/>
+
+    <CheckBox
+        android:id="@+id/tutorialCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/settingsTextView"
+        android:checked="false"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/_tasto_indietro"
+        android:layout_alignBottom="@+id/startButton"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

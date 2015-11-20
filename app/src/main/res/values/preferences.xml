@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="preference_key_app">it.playfellas.superapp.APP</string>
+
+    <string name="preference_key_game1">it.playfellas.superapp.GAME1_CONFIG</string>
+    <string name="preference_key_game2">it.playfellas.superapp.GAME2_CONFIG</string>
+    <string name="preference_key_game3">it.playfellas.superapp.GAME3_CONFIG</string>
+</resources>

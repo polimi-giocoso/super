@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_sfondo_grigio_xml"
+    tools:context="it.playfellas.superapp.ui.master.bluetooth.FastStartActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Connessione automatica in avvio"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/orange"/>
+
+    <Button
+        android:id="@+id/stopConnectionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/_button_with_text"
+        android:text="Interrompi"
+        android:textColor="@color/_button_text_color"
+        android:textSize="18sp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="60dp"
+        android:clickable="false"
+        android:elevation="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="invisible"
+        card_view:cardBackgroundColor="@color/similar_to_white"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/connectedDeviceImageView1"
+                android:text="Name"
+                android:textColor="@color/very_dark_gray"/>
+
+            <TextView
+                android:id="@+id/addressTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar1"
+                android:layout_alignStart="@+id/nameTextView1"
+                android:layout_marginBottom="6dp"
+                android:text="Address"
+                android:textColor="@color/very_dark_gray"/>
+
+            <ImageView
+                android:id="@+id/connectedDeviceImageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/_bt_cardview_device_logo"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/addressTextView1"/>
+
+            <TextView
+                android:id="@+id/countdownTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="22dp"
+                android:layout_toEndOf="@+id/addressTextView1"
+                android:text="5"
+                android:textColor="@color/orange"
+                android:textSize="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:clickable="false"
+        android:elevation="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="invisible"
+        card_view:cardBackgroundColor="@color/similar_to_white"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/connectedDeviceImageView2"
+                android:text="Name"
+                android:textColor="@color/very_dark_gray"/>
+
+            <TextView
+                android:id="@+id/addressTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar2"
+                android:layout_alignStart="@+id/nameTextView2"
+                android:layout_marginBottom="6dp"
+                android:text="Address"
+                android:textColor="@color/very_dark_gray"/>
+
+            <ImageView
+                android:id="@+id/connectedDeviceImageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/_bt_cardview_device_logo"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/addressTextView2"/>
+
+            <TextView
+                android:id="@+id/countdownTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/addressTextView2"
+                android:text="5"
+                android:textColor="@color/orange"
+                android:textSize="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:clickable="false"
+        android:elevation="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="invisible"
+        card_view:cardBackgroundColor="@color/similar_to_white"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/connectedDeviceImageView3"
+                android:text="Name"
+                android:textColor="@color/very_dark_gray"/>
+
+            <TextView
+                android:id="@+id/addressTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar3"
+                android:layout_alignStart="@+id/nameTextView3"
+                android:layout_marginBottom="6dp"
+                android:text="Address"
+                android:textColor="@color/very_dark_gray"/>
+
+            <ImageView
+                android:id="@+id/connectedDeviceImageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/_bt_cardview_device_logo"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/addressTextView3"/>
+
+            <TextView
+                android:id="@+id/countdownTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/addressTextView3"
+                android:text="5"
+                android:textColor="@color/orange"
+                android:textSize="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:clickable="false"
+        android:elevation="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:visibility="invisible"
+        card_view:cardBackgroundColor="@color/similar_to_white"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressBar4"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/connectedDeviceImageView4"
+                android:text="Name"
+                android:textColor="@color/very_dark_gray"/>
+
+            <TextView
+                android:id="@+id/addressTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/progressBar4"
+                android:layout_alignStart="@+id/nameTextView4"
+                android:layout_marginBottom="6dp"
+                android:text="Address"
+                android:textColor="@color/very_dark_gray"/>
+
+            <ImageView
+                android:id="@+id/connectedDeviceImageView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/_bt_cardview_device_logo"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/addressTextView4"/>
+
+            <TextView
+                android:id="@+id/countdownTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/addressTextView4"
+                android:text="5"
+                android:textColor="@color/orange"
+                android:textSize="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_normal">@color/orange_light</color>
+    <color name="background_normal_light">#fdd181</color>
+    <color name="background_inverted">#ecf0c3</color>
+    <color name="background_inverted_light">#e5e99b</color>
+    <color name="background_generic">#f5f5f4</color>
+    <color name="background_generic_light">@color/light_gray_generic_layout</color>
+</resources>

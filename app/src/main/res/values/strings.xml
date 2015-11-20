@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SuperApp</string>
+
+    <string name="bt_not_enabled_leaving">Devi attivare il Bluetooth!</string>
+    <string name="title_activity_bluetooth">Connessione BlueTooth</string>
+
+    <!-- SlaveActivity -->
+    <string name="slave_photo_send_error">La foto non può essere inviata</string>
+    <string name="listening_error">Errore durante la connessione</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="exit_message">Tornando indietro sarà necessario configurare nuovamente l\'applicazione.\nUscire?</string>
+
+</resources>

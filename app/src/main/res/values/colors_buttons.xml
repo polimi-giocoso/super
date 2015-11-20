@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NORMAL BUTTONS OVER NORMAL BACKGROUNDS -->
+    <color name="btn_normal">@color/orange</color>
+    <color name="btn_normal_disabled">@color/light_gray</color>
+    <color name="btn_pressed">@color/dark_orange</color>
+
+    <color name="btn_button_border_normal">@color/white</color>
+    <color name="btn_button_border_disabled">@color/white</color>
+    <color name="btn_button_border_pressed">@color/white</color>
+
+    <color name="btn_text_normal">@color/white</color>
+    <color name="btn_text_disabled">@color/medium_gray</color>
+    <color name="btn_text_pressed">@color/white</color>
+
+    <!-- GENERIC BUTTONS OVER GENERIC BACKGROUNDS-->
+    <color name="btn_generic_normal">@color/dark_gray</color>
+    <color name="btn_generic_disabled">@color/light_gray</color>
+    <color name="btn_generic_pressed">@color/light_gray</color>
+
+    <color name="btn_generic_button_border_normal">@color/white</color>
+    <color name="btn_generic_button_border_disabled">@color/white</color>
+    <color name="btn_generic_button_border_pressed">@color/white</color>
+
+    <color name="btn_text_generic_normal">@color/white</color>
+    <color name="btn_text_generic_disabled">@color/medium_gray</color>
+    <color name="btn_text_generic_pressed">@color/dark_gray</color>
+</resources>

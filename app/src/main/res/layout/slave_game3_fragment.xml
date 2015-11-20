@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/_sfondo_arancio"
+                tools:context="it.playfellas.superapp.ui.slave.game2.SlaveGame2Fragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/_photo_default"/>
+
+    <RelativeLayout
+        android:id="@+id/scene"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/photoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#000000"
+        android:orientation="horizontal"/>
+
+</RelativeLayout>

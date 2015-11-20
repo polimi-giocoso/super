@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="normal_photo_border">@color/orange</color>
+    <color name="generic_photo_border">@color/medium_gray</color>
+    <color name="circular_photo_border">@color/orange</color>
+    <color name="circular_photo_default">@color/orange_light</color>
+</resources>
