@@ -2,7 +2,7 @@
 
 # Super App
 
-- [Documentazione](https://github.com/polimi-giocoso/docs)
+###### [Documentazione](https://github.com/polimi-giocoso/docs)
 
 
 ###### License
